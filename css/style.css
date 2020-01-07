@@ -1,0 +1,512 @@
+@charset "UTF-8";
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  color: #16120F; }
+
+/* Хедер */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 87px;
+  width: 100%;
+  background-color: white;
+  border-bottom: 1px solid #16120F;
+  position: fixed;
+  z-index: 3000; }
+
+.conteiner {
+  display: flex;
+  justify-content: center;
+  width: 1140px;
+  height: 100%; }
+
+.header_conteiner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1140px;
+  height: 100%; }
+  .header_conteiner .logo {
+    display: flex;
+    align-items: center;
+    width: 307px;
+    height: 100%;
+    border-right: 1px solid #16120F; }
+  .header_conteiner .menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    width: 833px; }
+  .header_conteiner .menu p {
+    display: block;
+    padding: 8px 16px 8px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    background: white; }
+  .header_conteiner .menu p:hover {
+    background: #16120F;
+    color: white; }
+  .header_conteiner .searchIcon {
+    padding-left: 29px;
+    cursor: pointer; }
+  .header_conteiner .cartIcon {
+    padding-left: 64px;
+    cursor: pointer; }
+
+/* Первая страница, УТП */
+.Main_page {
+  height: 676px;
+  width: 100%;
+  display: flex;
+  justify-content: center; }
+
+.LiveChat {
+  position: fixed;
+  top: 40%;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 129px;
+  width: 36px;
+  background-color: #16120F;
+  cursor: pointer;
+  color: white;
+  z-index: 3001; }
+
+.LiveChat img {
+  margin-bottom: 12px;
+  transform: rotate(-90deg); }
+
+.LiveChat p {
+  transform: rotate(-90deg);
+  margin-bottom: 2px; }
+
+.LiveChat:hover {
+  box-shadow: 0px 5px 8px 5px rgba(0, 0, 0, 0.15); }
+
+.conteiner {
+  display: flex;
+  justify-content: center;
+  max-width: 1140px;
+  height: 100%;
+  border-right: 1px solid #16120F;
+  border-left: 1px solid #16120F; }
+  .conteiner .Main_conteiner {
+    display: flex;
+    width: 100%; }
+    .conteiner .Main_conteiner .Maintance {
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+      width: 60%;
+      height: 100%;
+      margin-top: 152px;
+      color: #16120F; }
+      .conteiner .Main_conteiner .Maintance .Main_text {
+        padding-left: 94px;
+        margin: 0;
+        font-size: 4rem;
+        font-weight: 900;
+        line-height: 67px; }
+      .conteiner .Main_conteiner .Maintance .Secondary_text {
+        padding-left: 94px;
+        font-size: 1rem;
+        font-weight: 300; }
+    .conteiner .Main_conteiner .buttons_conteiner {
+      padding-left: 94px;
+      padding-top: 15px; }
+      .conteiner .Main_conteiner .buttons_conteiner .buy_button {
+        height: 45px;
+        width: 195px;
+        background: #16120F;
+        border: none;
+        border-radius: 3px;
+        color: white;
+        font-weight: 700;
+        cursor: pointer; }
+      .conteiner .Main_conteiner .buttons_conteiner .buy_button:hover {
+        background: #2C2A29; }
+      .conteiner .Main_conteiner .buttons_conteiner .detail_button {
+        margin-left: 27px;
+        height: 45px;
+        width: 130px;
+        background: white;
+        border: 1px solid #16120F;
+        border-radius: 3px;
+        color: #16120F;
+        font-weight: 700;
+        cursor: pointer; }
+      .conteiner .Main_conteiner .buttons_conteiner .detail_button:hover {
+        background: #EDEDED; }
+    .conteiner .Main_conteiner .Main_photo {
+      width: 40%;
+      height: 100%;
+      overflow: hidden; }
+    .conteiner .Main_conteiner .Main_photo img {
+      transition: 3s; }
+    .conteiner .Main_conteiner .Main_photo img:hover {
+      transform: scale(1.3); }
+
+.Main_photo--rectangle {
+  width: 34%;
+  height: 100%;
+  overflow: hidden;
+  margin-left: 34px; }
+
+/* Вторая страница East philosophie 
+in every leaf */
+.Second_page {
+  width: 100%;
+  height: 940px;
+  display: flex;
+  justify-content: center; }
+  .Second_page .Overlay_conteiner {
+    display: flex;
+    width: 100%;
+    border-top: 1px solid #16120F;
+    border-bottom: 1px solid #16120F; }
+  .Second_page .Left_box {
+    display: flex;
+    align-items: center;
+    width: 60%;
+    overflow: hidden; }
+  .Second_page .Left_box img {
+    transition: 3s; }
+  .Second_page .Left_box img:hover {
+    transform: scale(1.3); }
+  .Second_page .Right_box {
+    width: 40%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 35.5px;
+    padding-left: 94px;
+    border-left: 1px solid #16120F; }
+  .Second_page .detail_button {
+    margin-left: 27px;
+    height: 45px;
+    width: 130px;
+    background: white;
+    border: 1px solid #16120F;
+    border-radius: 3px;
+    color: #16120F;
+    font-weight: 700;
+    cursor: pointer;
+    margin-left: 0; }
+  .Second_page .detail_button:hover {
+    background: #EDEDED; }
+
+/* Третья страница Take 30% off... */
+.Third_page {
+  width: 100%;
+  height: 353px;
+  display: flex;
+  justify-content: center; }
+  .Third_page .Overlay_conteiner_two {
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid #16120F; }
+  .Third_page .proposition {
+    width: 506px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    padding-left: 94px;
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 35.5px;
+    background: #16120F; }
+    .Third_page .proposition .detail_button {
+      margin-left: 27px;
+      height: 45px;
+      width: 130px;
+      background: white;
+      border: 1px solid #16120F;
+      border-radius: 3px;
+      color: #16120F;
+      font-weight: 700;
+      cursor: pointer;
+      margin-left: 0; }
+    .Third_page .proposition .detail_button:hover {
+      background: #EDEDED; }
+  .Third_page .japan_words {
+    width: 275px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 6.4rem;
+    line-height: 113px;
+    font-weight: 700;
+    margin-top: 25px; }
+  .Third_page .photo_box {
+    width: 359px;
+    overflow: hidden; }
+  .Third_page .photo_box img {
+    transition: 3s; }
+  .Third_page .photo_box img:hover {
+    transform: scale(1.3); }
+  .Third_page .proposition p {
+    margin-top: 0; }
+
+/* Четвертая страница Tea accessories */
+.Fourth_page {
+  width: 100%;
+  height: 834px;
+  display: flex;
+  justify-content: center; }
+  .Fourth_page .accessories {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; }
+  .Fourth_page .accessories p, .Fourth_page h2 {
+    margin: 0; }
+  .Fourth_page .accessories h2 {
+    margin: 15px;
+    font-size: 1.6rem;
+    font-weight: 700; }
+  .Fourth_page .photo_line {
+    margin-top: 50px;
+    margin-bottom: 50px; }
+  .Fourth_page .photo_line img {
+    margin: 12px; }
+  .Fourth_page .buy_button {
+    height: 45px;
+    width: 195px;
+    background: #16120F;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    font-weight: 700;
+    cursor: pointer; }
+  .Fourth_page .buy_button:hover {
+    background: #2C2A29; }
+
+/* Пятая страница Latest arrivals */
+.Fifth_page {
+  width: 100%;
+  height: 883px;
+  display: flex;
+  justify-content: center; }
+
+.Overlay_conteiner-fifth_page {
+  display: flex;
+  width: 100%;
+  border-bottom: 1px solid #16120F;
+  border-top: 1px solid #16120F;
+  color: white; }
+
+.Overlay_conteiner-fifth_page h2 {
+  font-size: 1.6rem;
+  font-weight: 700; }
+
+.arrivals {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  width: 62%;
+  height: 100%;
+  background: #16120F; }
+
+.arrivals h2 {
+  margin-left: 38.5%;
+  margin-bottom: 35px; }
+
+.detail_button {
+  margin-left: 27px;
+  height: 45px;
+  width: 130px;
+  background: white;
+  border: 1px solid #16120F;
+  border-radius: 3px;
+  color: #16120F;
+  font-weight: 700;
+  cursor: pointer;
+  margin-left: 38.5%; }
+
+.detail_button:hover {
+  background: #EDEDED; }
+
+.photos_arrival {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; }
+
+.photo_top, .photo_bottom {
+  overflow: hidden; }
+
+.photo_top img {
+  transition: 3s; }
+
+.photo_top img:hover {
+  transform: scale(1.3); }
+
+.photo_bottom img {
+  transition: 3s; }
+
+.photo_bottom img:hover {
+  transform: scale(1.3); }
+
+/* Шестая страница Promo */
+.Sixth_page {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 402px; }
+
+.Overlay_conteiner_sixth {
+  display: flex;
+  width: 100%;
+  border-bottom: 1px solid #16120F;
+  color: #16120F; }
+
+.first_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; }
+
+.second_box {
+  display: flex;
+  align-items: flex-end;
+  height: 401px;
+  border-left: 1px solid #16120F;
+  border-right: 1px solid #16120F; }
+
+.second_box img {
+  margin-bottom: 111px; }
+
+.third_box {
+  width: 230px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center; }
+
+.third_box p {
+  font-size: 96px;
+  font-weight: 700;
+  transform: rotate(270deg); }
+
+/* Седьмая страница Contacts */
+.Seventh_page {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 619px; }
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  width: 60%; }
+
+.form h2 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin: 0 0 22px 0; }
+
+.form p {
+  margin: 0 0 18px 0; }
+
+input {
+  height: 45px;
+  width: 195px;
+  border: 1px solid #9C9C9C;
+  border-radius: 3px;
+  outline: none;
+  margin-right: 16px;
+  padding-left: 13px; }
+
+:focus::placeholder {
+  opacity: 0; }
+
+.input, .form_text {
+  margin-left: 68px; }
+
+.subscribe button {
+  height: 45px;
+  width: 195px;
+  background: #16120F;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  width: 130px;
+  margin: 35px 0 0 68px; }
+
+.subscribe button:hover {
+  background: #2C2A29; }
+
+.social_media {
+  height: 100%;
+  width: 40%;
+  border-left: 1px solid #16120F; }
+
+.social_media {
+  display: flex;
+  justify-content: center;
+  flex-direction: column; }
+
+.social_media p {
+  margin: 0 0 8px 192px;
+  font-weight: 900;
+  cursor: pointer; }
+
+.social_media p:hover {
+  color: #9C9C9C; }
+
+/* Восьмая страница Footer */
+.Eigth_page {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 619px;
+  background-color: #16120F;
+  height: 180px; }
+
+.logo {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  margin: 0; }
+
+.contacts {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  margin-left: 200px; }
+
+.contacts p {
+  margin: 0 0 8px 0px; }
+
+.social {
+  width: 20%;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  margin: 0; }
+
+.social p {
+  margin: 0 0 8px 0px;
+  font-weight: 700;
+  cursor: pointer; }
