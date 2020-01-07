@@ -1,0 +1,675 @@
+$backgroundWhite: white;
+$Dark: #16120F;
+$hoverDark: #2C2A29;
+$hoverWhite: #EDEDED;
+$green: #5EE51E;
+$red: #E83328;
+
+
+@mixin detail_button {
+	margin-left: 27px;
+	height: 45px;
+	width: 130px;
+	background: white;
+	border: 1px solid $Dark;
+	border-radius: 3px;
+	color: $Dark;
+	font-weight: 700;
+	cursor: pointer;
+}
+
+@mixin buy_button {
+	height: 45px;
+	width: 195px;
+	background: $Dark;
+	border: none;
+	border-radius: 3px;
+	color: white;
+	font-weight: 700;
+	cursor: pointer;
+}
+
+@mixin conteiner {
+	display: flex;
+	justify-content: center;
+	max-width: 1140px;
+	height: 100%;
+}
+
+ 
+
+body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	font-family: 'Roboto', sans-serif;
+	font-size: 15px;
+	color: $Dark;
+}
+
+
+
+/* Хедер */
+
+
+
+header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height:87px;
+	width: 100%;
+	background-color: $backgroundWhite;
+	border-bottom: 1px solid $Dark;
+	position: fixed; 
+	z-index: 3000;
+}
+
+.conteiner {
+	display: flex;
+	justify-content: center;
+	width: 1140px;
+	height: 100%;
+}
+
+.header_conteiner {
+	display: flex;
+	justify-content: center;
+	align-items: center;	
+	width: 1140px;
+	height: 100%;
+
+	.logo {
+	display: flex;
+	align-items: center;
+	width: 307px;
+	height: 100%;
+	border-right: 1px solid $Dark;
+}
+
+.menu {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	height: 100%;
+	width: 833px;
+}
+
+.menu p {
+	display: block;
+	padding: 8px 16px 8px;
+	font-weight: bold;
+	font-size: 1rem;
+	cursor: pointer;
+	background: white;
+ 
+}
+
+.menu p:hover {
+	background: $Dark;
+	color: white;
+}
+
+.searchIcon {
+	padding-left: 29px;
+	cursor: pointer;
+}
+
+.cartIcon {
+	padding-left: 64px;
+	cursor: pointer;
+}
+}
+
+
+
+/* Первая страница, УТП */
+
+
+
+.Main_page {
+	height: 676px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.LiveChat {
+	position: fixed;
+	top: 40%;
+	right: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 129px;
+	width: 36px;
+	background-color: $Dark;
+	cursor: pointer;
+	color: white;
+	z-index: 3001;
+
+}
+
+.LiveChat img {
+	margin-bottom: 12px;
+	transform: rotate(-90deg);
+}
+
+.LiveChat p {
+	transform: rotate(-90deg);
+	margin-bottom: 2px;
+  
+}
+
+.LiveChat:hover {
+   box-shadow: 0px 5px 8px 5px rgba(0,0,0,0.15);
+}
+
+.conteiner {
+	@include conteiner;
+	border-right: 1px solid $Dark;
+	border-left: 1px solid $Dark;
+
+		.Main_conteiner {
+		display: flex;
+		width: 100%;
+
+		.Maintance {
+		display: flex;
+		align-items: flex-start;
+		flex-direction: column;
+		width: 60%;
+		height: 100%;
+		margin-top: 152px;
+		color: $Dark;
+
+		.Main_text {
+	    padding-left: 94px;
+	    margin: 0;
+		font-size: 4rem;
+		font-weight: 900;
+		line-height: 67px;
+		}
+
+		.Secondary_text {
+	    padding-left: 94px;
+		font-size: 1rem;
+		font-weight: 300;
+		}
+}
+
+.buttons_conteiner {
+	padding-left: 94px;
+	padding-top: 15px;
+
+	.buy_button {
+	@include buy_button;
+	}
+
+	.buy_button:hover {
+	    background: $hoverDark;
+		}
+
+	.detail_button {
+     @include detail_button;
+	}
+
+	.detail_button:hover {
+		background: $hoverWhite;
+		}
+}
+
+.Main_photo {
+	width: 40%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.Main_photo img {
+	transition: 3s;
+}
+
+.Main_photo img:hover {
+	transform: scale(1.3);
+}
+}
+}
+
+.Main_photo--rectangle {
+	width: 34%;
+	height: 100%;
+	overflow: hidden;
+	margin-left: 34px;
+}
+
+
+
+/* Вторая страница East philosophie 
+in every leaf */
+
+
+
+.Second_page {
+	width: 100%;
+	height: 940px;
+	display: flex;
+	justify-content: center;
+
+	.Overlay_conteiner {
+		display: flex;
+		width: 100%;
+        border-top: 1px solid $Dark;
+        border-bottom: 1px solid $Dark;
+	}
+
+	.Left_box {
+		display: flex;
+		align-items: center;
+		width: 60%;
+		overflow: hidden;
+	}
+
+		.Left_box img {
+		transition: 3s;
+	}
+
+		.Left_box img:hover {
+		transform: scale(1.3);
+	}
+
+	.Right_box {
+		width: 40%;
+		display: flex;
+		align-items: flex-start;
+		justify-content: center;
+		flex-direction: column;
+		font-size: 1.6rem;
+		font-weight: 700;
+		line-height: 35.5px;
+		padding-left: 94px;
+		border-left: 1px solid $Dark;
+	}	
+
+	.detail_button {
+		 @include detail_button;
+		 margin-left: 0;
+	}
+		.detail_button:hover {
+		background: $hoverWhite;
+		}
+}
+
+
+
+/* Третья страница Take 30% off... */
+
+
+
+.Third_page {
+	width: 100%;
+	height: 353px;
+	display: flex;
+	justify-content: center;
+
+	.Overlay_conteiner_two {
+		display: flex;
+		width: 100%;
+        border-bottom: 1px solid $Dark;
+	}
+
+	.proposition {
+		width: 506px;
+		display: flex;
+		align-items: flex-start;
+		justify-content: center;
+		flex-direction: column;
+		color: white;
+		padding-left: 94px;
+		font-size: 1.6rem;
+		font-weight: 700;
+		line-height: 35.5px;
+		background: $Dark;
+
+	.detail_button {
+		 @include detail_button;
+		 margin-left: 0;
+	}
+		.detail_button:hover {
+		background: $hoverWhite;
+		}
+	}
+		.japan_words {
+		width: 275px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 6.4rem;
+		line-height: 113px;
+		font-weight: 700;
+		margin-top: 25px;
+	}
+		.photo_box {
+		width: 359px;
+		overflow: hidden;
+	}
+
+		.photo_box img {
+		transition: 3s;
+	}
+
+		.photo_box img:hover {
+		transform: scale(1.3);
+	}
+
+	.proposition p {
+		margin-top: 0;
+	}	
+}
+
+
+
+/* Четвертая страница Tea accessories */
+
+
+
+.Fourth_page {
+	width: 100%;
+	height: 834px;
+	display: flex;
+	justify-content: center;
+
+.accessories {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.accessories p,h2 {
+	margin: 0;
+}
+
+.accessories h2 {
+	margin: 15px;
+	font-size: 1.6rem;
+	font-weight: 700;
+}
+
+.photo_line {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+.photo_line img {
+	margin: 12px;
+}
+
+.buy_button {
+    @include buy_button;
+}
+.buy_button:hover {
+	 background: $hoverDark;
+}
+}
+
+
+
+/* Пятая страница Latest arrivals */
+
+
+
+.Fifth_page {
+	width: 100%;
+	height: 883px;
+	display: flex;
+	justify-content: center;
+}
+
+.Overlay_conteiner-fifth_page {
+	display: flex;
+	width: 100%;
+    border-bottom: 1px solid $Dark;
+    border-top: 1px solid $Dark;
+    color: white;   
+}
+
+.Overlay_conteiner-fifth_page h2 {
+	font-size: 1.6rem;
+	font-weight: 700;
+
+}
+
+.arrivals {
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	flex-direction: column;
+    width: 62%;
+    height: 100%;
+    background: $Dark;
+}
+
+.arrivals h2 {
+    margin-left: 38.5%;
+    margin-bottom: 35px;
+}
+
+.detail_button {
+	@include detail_button;
+	margin-left: 38.5%;
+}
+
+.detail_button:hover {
+	background: $hoverWhite;
+}
+
+.photos_arrival {
+	display: flex;
+	flex-direction: column;
+    overflow: hidden;
+}
+
+.photo_top, .photo_bottom {
+	overflow: hidden;
+}
+
+.photo_top img {
+	transition: 3s;
+}
+
+.photo_top img:hover {
+	transform: scale(1.3);
+}
+
+.photo_bottom img {
+	transition: 3s;
+}
+
+.photo_bottom img:hover {
+	transform: scale(1.3);
+}
+
+
+
+/* Шестая страница Promo */
+
+
+
+.Sixth_page {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	height: 402px;
+}
+
+.Overlay_conteiner_sixth {
+	display: flex;
+	width: 100%;
+    border-bottom: 1px solid $Dark;
+    color: $Dark;   
+}
+
+.first_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.second_box {
+    display: flex;
+    align-items: flex-end;
+    height: 401px;
+    border-left: 1px solid $Dark;
+    border-right: 1px solid $Dark;
+}
+
+.second_box img {
+    margin-bottom: 111px;
+}
+
+.third_box {
+	width: 230px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.third_box p {
+	font-size: 96px;
+    font-weight: 700;
+    transform: rotate(270deg);
+}
+
+
+
+
+/* Седьмая страница Contacts */
+
+
+
+.Seventh_page {
+display: flex;
+justify-content: center;
+width: 100%;
+height: 619px;
+}
+
+.form {
+display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 60%;
+}
+
+.form h2 {
+font-size: 1.6rem;
+font-weight: 700;
+margin: 0 0 22px 0;
+}
+
+.form p {
+margin: 0 0 18px 0;
+}
+
+input {
+height: 45px;
+width: 195px;
+border: 1px solid #9C9C9C;
+border-radius: 3px;
+outline: none;
+margin-right: 16px;
+padding-left: 13px;
+}
+
+:focus::placeholder {
+opacity: 0;
+}
+
+.input, .form_text {
+margin-left: 68px;
+}
+
+.subscribe button {
+@include buy_button;
+width: 130px;
+margin: 35px 0 0 68px;
+}
+
+.subscribe button:hover {
+    background: $hoverDark;
+}
+
+.social_media {
+    height: 100%;
+    width: 40%;
+    border-left: 1px solid $Dark;
+}
+
+.social_media {
+display: flex;
+justify-content: center;
+flex-direction: column;
+}
+
+.social_media p {
+margin: 0 0 8px 192px;
+font-weight: 900;
+cursor: pointer;
+}
+
+.social_media p:hover {
+    color: #9C9C9C;
+}
+
+
+
+/* Восьмая страница Footer */
+
+
+
+.Eigth_page {
+display: flex;
+justify-content: center;
+width: 100%;
+height: 619px;
+background-color: $Dark;
+height: 180px;
+}
+
+.logo {
+width: 20%;
+display: flex;
+align-items: center;
+margin: 0;
+}
+
+.contacts {
+width: 80%;
+display: flex;
+justify-content: center;
+flex-direction: column;
+color: white;
+margin-left: 200px;
+}
+
+.contacts p {
+margin: 0 0 8px 0px;
+}
+
+.social {
+width: 20%;
+display: flex;
+align-items: flex-end;
+flex-direction: column;
+justify-content: center;
+color: white;
+margin: 0;
+}
+
+.social p {
+margin: 0 0 8px 0px;
+font-weight: 700;
+cursor: pointer;
+}
+ 
